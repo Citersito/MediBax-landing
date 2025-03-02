@@ -1,0 +1,131 @@
+@import "variables";
+@import "mixins";
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font-family;
+	color: $text-color;
+	background-color: $background-color;
+	line-height: 1.6;
+	font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 3.2rem;
+	@include respond-to(medium) {
+		font-size: 3rem;
+	}
+}
+
+h2 {
+	font-size: 3rem;
+	@include respond-to(medium) {
+		font-size: 2.6rem;
+	}
+}
+
+h3 {
+	font-size: 2.4rem;
+	@include respond-to(medium) {
+		font-size: 2rem;
+	}
+}
+
+p {
+	font-size: 1.6rem;
+	margin-bottom: 1.5rem;
+
+	@include respond-to(medium) {
+		font-size: 1.4rem;
+	}
+}
+
+a {
+	color: $text-color;
+	text-decoration: none;
+	font-size: 1.6rem;
+	@include respond-to(medium) {
+		font-size: 1.4rem;
+	}
+}
+.italic {
+	font-style: italic;
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+}
+// button {
+// 	font-family: inherit;
+// 	font-size: inherit;
+// 	padding: 0.8rem 1.6rem;
+// 	border: none;
+// 	cursor: pointer;
+// 	background-color: $primary-color;
+// 	color: #ffffff;
+// 	border-radius: 0.4rem;
+// 	transition: background-color 0.3s;
+
+// 	&:hover {
+// 		background-color: darken($primary-color, 10%);
+// 	}
+// }
+
+// .container {
+// 	max-width: 120rem;
+// 	margin: 0 auto;
+// 	padding: 0 2rem;
+// }
+
+// .row {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin: -1rem;
+
+// 	> * {
+// 		padding: 1rem;
+// 		flex: 1;
+// 	}
+// }
+
+// .section {
+// 	padding: 4rem 0;
+
+// 	@include respond-to(medium) {
+// 		padding: 8rem 0;
+// 	}
+// }
+
+// .header,
+// .footer {
+// 	background-color: $secondary-color;
+// 	color: #ffffff;
+// 	padding: 2rem 0;
+
+// 	.container {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 	}
+// }

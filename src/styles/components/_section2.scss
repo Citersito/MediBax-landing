@@ -1,0 +1,29 @@
+@import "../variables";
+.section2 {
+	height: 50vh;
+	color: $text-color-alt;
+	background-color: $primary-color;
+	&-content__title {
+		padding-top: 2rem;
+		font-weight: 300;
+		span {
+			font-weight: 600;
+		}
+	}
+	&-cards {
+		display: flex;
+	}
+	.section2-content-container {
+		display: flex;
+		justify-content: space-evenly;
+		&__text {
+			width: 65%;
+		}
+		&__img {
+			width: 35%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+@import "../variables";
+
+.hero {
+	background-color: $background-color-white;
+	.hero--content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 95%;
+		margin: auto;
+	}
+	.hero--content__logo {
+		color: $primary-color;
+		display: flex;
+		align-items: center;
+	}
+	.hero--content__button {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem 2rem;
+		background-color: $button-color;
+		border-radius: 2rem;
+		text-decoration: none;
+
+		a {
+			color: #fff;
+			&:hover {
+				font-weight: 800;
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+@include respond-to(medium) {
+	.hero--content {
+		width: 90%;
+		.hero--content__button {
+			padding: 1.2rem 3rem;
+		}
+	}
+}

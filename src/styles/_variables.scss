@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+$font-family: "Lexend Deca", serif;
+
+$primary-color: #05294b;
+$secondary-color: #161616;
+$background-color: #f4f7fd;
+$background-color-white: #ffffff;
+$background-color-section2: #1c4974;
+
+$text-color: #333333;
+$text-color-alt: #ffffff;
+$icon-color: #b3b3b3;
+$button-color: #f26c05;
+$breakpoints: (
+	small: 480px,
+	medium: 768px,
+	large: 1024px,
+);
