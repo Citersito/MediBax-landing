@@ -2,42 +2,63 @@
 
 .hero {
 	background-color: $background-color-white;
+	border-bottom-left-radius: 1.5rem;
+	border-bottom-right-radius: 1.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 	.hero--content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 1rem 0;
 		width: 95%;
 		margin: auto;
+		cursor: pointer;
 	}
 	.hero--content__logo {
 		color: $primary-color;
 		display: flex;
 		align-items: center;
+		gap: 1rem;
+		img {
+			width: 3rem;
+		}
+		h1 {
+			font-size: 2rem;
+			margin: 0;
+		}
 	}
 	.hero--content__button {
-		margin-top: 10px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 1rem 2rem;
-		background-color: $button-color;
-		border-radius: 2rem;
-		text-decoration: none;
-
+		padding: 0.6rem 1.4rem;
 		a {
 			color: #fff;
-			&:hover {
-				font-weight: 800;
-				transform: scale(1.1);
-			}
+			font-weight: 500;
+			font-size: 1.4rem;
 		}
 	}
 }
 @include respond-to(medium) {
 	.hero--content {
 		width: 90%;
+		padding: 2rem 0;
+		.hero--content__logo {
+			img {
+				width: 5rem;
+			}
+			h1 {
+				font-size: 3rem;
+				margin: 0;
+			}
+		}
 		.hero--content__button {
-			padding: 1.2rem 3rem;
+			padding: 1rem 2rem;
+			a {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }
