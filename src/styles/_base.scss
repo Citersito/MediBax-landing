@@ -90,7 +90,7 @@ li {
 	cursor: pointer;
 	border: 2px solid #000;
 	&:hover {
-		border-bottom: 7px solid $primary-color;
+		border-bottom: 7px solid #000;
 		transform: scale(1.05);
 	}
 }
