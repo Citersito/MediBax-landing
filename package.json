@@ -3,15 +3,16 @@
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "NODE_NO_WARNINGS=1 astro dev",
-		"build": "NODE_NO_WARNINGS=1 astro build",
-		"preview": "NODE_NO_WARNINGS=1 astro preview",
-		"astro": "NODE_NO_WARNINGS=1 astro"
+		"dev": "cross-env NODE_NO_WARNINGS=1 astro dev",
+		"build": "cross-env NODE_NO_WARNINGS=1 astro build",
+		"preview": "cross-env NODE_NO_WARNINGS=1 astro preview",
+		"astro": "cross-env NODE_NO_WARNINGS=1 astro"
 	},
 	"dependencies": {
 		"astro": "^5.4.1"
 	},
 	"devDependencies": {
+		"cross-env": "^7.0.3",
 		"sass": "^1.85.1"
 	}
 }
