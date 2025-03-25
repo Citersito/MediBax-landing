@@ -4,7 +4,7 @@
 	padding-top: 12rem;
 	width: 100%;
 	min-height: 85vh;
-	background-image: url(/src/assets/stacked-waves-haikei-2.svg);
+	background-image: url(/src/assets/BA3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	// &__animation {
@@ -16,7 +16,6 @@
 		text-align: center;
 		&__titulo {
 			margin-top: 0;
-			font-size: 4rem;
 			font-weight: 400;
 			color: $primary-color;
 			span {
@@ -48,7 +47,7 @@
 			}
 		}
 		.button {
-			color: #fff;
+			color: #903232;
 			padding: 1rem 2rem;
 			font-weight: 800;
 			font-size: 1.7rem;
